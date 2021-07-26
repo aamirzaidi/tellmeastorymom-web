@@ -1,0 +1,434 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+
+header {
+  
+  margin-right: 0%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  
+}
+
+header h1 {
+
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  background-color:#ccc;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0%;
+  height: 2.5rem;
+ 
+}
+@media (max-width:560px){
+  footer{
+    background-color:#ccc;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0%;
+    height: 12rem;
+  }
+
+}
+footer p {
+  background: #ccc;
+}
+
+
+
+.top{
+  background-color:whitesmoke;
+}
+
+.top-color{
+  color: white;
+}
+
+.icon{
+  padding: 1rem;
+}
+
+.down{
+  background-color: #1c2331;
+  margin: 0%;
+  padding-top: 0.5rem;
+}
+
+.end{
+  background-color: #161c27;
+}
+
+.wth{
+  max-width: 700px;
+}
+
+.categoryNamePadding{
+ float: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.viewport{
+  padding: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.f{
+  padding-left: 5rem;
+}
+
+.footer-padding{
+  padding-left: 5rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.rec.rec-arrow {
+  border-radius: 0;
+}
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+  border-radius: 50%;
+}
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+
+}
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px lightgrey;
+}
+
+.special-color-dark{
+  background-color:#f1f1f1
+}
+
+.n{
+  color: black;
+  padding-left: 2rem;
+}
+
+.form{
+  padding-top: 2rem;
+}
+
+.storypage {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 16px;
+  padding: 1.5rem;
+}
+
+
+.spn{
+  padding: 1rem;
+  color: white;
+  text-align: center;
+
+}
+.categoryCard {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  margin: 16px;
+  cursor: pointer; /*Added*/
+}
+
+.topStoryCard {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  width: 100%;
+ 
+}
+
+.top-carouse-image{
+  flex: 1;
+  height:100%;
+  width: 100%;
+}
+
+.mompreneurPadding-top{
+  padding-top: 2rem;
+}
+
+
+
+.mompreneurPadding-left{
+  padding-left: 1rem;
+}
+
+.explore-more-categories-button {
+  
+  text-align: center;
+}
+
+.login-outline{
+  padding-bottom: 1rem;
+  background-color: whitesmoke;
+}
+
+.googleSpace{
+  padding-right: 1rem;
+}
+
+
+
+.hand{
+  cursor: pointer;
+}
+
+.explore-more-categories-padding-bottom-top{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.about{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+}
+
+.about-font{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.about-color{
+  color: black;
+  
+}
+
+.s-color{
+  color: gray;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.fa {
+
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  
+}
+
+.top-header{
+  background-color: #282156;
+  margin-bottom: 0%;
+}
+
+.top-header-color{
+  color: white;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .top-header-color{
+    font-size: 1.8rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.responsive-image {
+  position: relative;
+  max-width: 100%;
+}
+
+
+.top-margin{
+ padding-left: 8rem;
+ margin-top: 0.5rem;
+ font-family: "McLaren", cursive;
+}
+
+
+
+.float{
+  float: right;
+ 
+}
+
+.float-left{
+  float: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.btn-margin{
+  margin-left: 1rem;
+}
+
+
+.login-padding{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.logo{
+  border-radius: 50%;
+}
+
+.round{
+  border-radius: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.d{
+  padding-top: 7rem;
+  color:#282156;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.d-title{
+  padding-top: 2rem;
+  font-family:cursive;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.d-name{
+  padding-top: 6rem;
+}
+
+.d-box{
+  background-color: whitesmoke;
+}
+
+.d-bottom{
+  padding-bottom: 4rem;
+}
+
+.name-padding{
+  padding-top: 1.5 rem;
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #282156;
+}
+
+.space-between{
+ margin-top: 10rem;
+}
+.cd{
+  /* background-image: url("https://i.pinimg.com/originals/08/1f/8c/081f8cd08585e1040a8393c25b274126.gif"); */
+     /* background-image: url("https://i.pinimg.com/originals/84/9f/f2/849ff2b1c2838cd028d3c067369e424d.gif"); */
+  /* background-image: url("https://i.pinimg.com/originals/11/26/ea/1126ea2a4742c4bff5139eae7843425f.gif"); */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/tellmeastorymom-c17e3.appspot.com/o/Cloudy-Night.gif?alt=media&token=621d6873-7319-4ad3-b4ea-18001bbc300f");
+    }
+
+.in{
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 5px #ccc;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #282156;
+}
+
+ 
+.rec.rec-slider-container {
+  margin: 0 0;
+}
+
+.top-card-padding{
+  padding-top: 2rem;
+}
+
+.progress-bar{
+  padding-bottom: 1 rem;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.profile-card{
+  background-color: whitesmoke;
+  width: 70%;
+}
+
+.profile{
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: 0 rem;
+  padding-right: var(--bs-gutter-x,.0 rem);
+  padding-left: 0 rem;
+  padding-left: var(--bs-gutter-x,0 rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.comment_list{
+  padding: 2 rem;
+}
+
+.comment_card{
+  padding-Top: 2 rem;
+  padding-Bottom: 2 rem;
+}
+
+<<<<<<< HEAD
+.share-padding{
+  padding-left: 1.5rem;
+}
+=======
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .top_header_btn{
+       padding-top: 2 rem;
+    }
+  }
+>>>>>>> 3636f898de7d33e14df34abf357f158a48611fab
