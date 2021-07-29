@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/tellmeb1/public_html/
+    - export DEPLOYPATH=/home/tellmeb1/public_html
     - /bin/cp * $DEPLOYPATH
