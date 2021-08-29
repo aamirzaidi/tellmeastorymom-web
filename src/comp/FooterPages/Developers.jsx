@@ -43,7 +43,7 @@ function Developers() {
                     </Container> */}
                     <div className="d-box">
                     <img styles = {{paddingTop : 20}} className=" logo responsive-image mompreneurPadding-top"
-                                src="https://media-exp1.licdn.com/dms/image/C4E03AQGu95m4alP_og/profile-displayphoto-shrink_800_800/0/1598511572312?e=1629331200&v=beta&t=h0zWw1t954iAf9G_m9zGW7P5k52arOpVx2sgVG60uvs" height="250" width="250" />
+                                src="https://media-exp1.licdn.com/dms/image/C4E03AQGu95m4alP_og/profile-displayphoto-shrink_200_200/0/1598511572312?e=1635984000&v=beta&t=YTD9WATOEnCJCajw1fEy6FoYMLNHvmOzfoQpmuzobDA" height="250" width="250" />
                         <h2 className="name-padding">Mohd Aamir</h2>
                             <h6>Full Stack Web Developer</h6>
                             <h6>B.Tech (CSE) - 2022</h6>
@@ -54,7 +54,7 @@ function Developers() {
                     </div>
                     <div className="d-box space-between ">
                     <img styles = {{paddingTop : 20}} className=" logo responsive-image mompreneurPadding-top"
-                                src="https://media-exp1.licdn.com/dms/image/C5603AQFn4G5OyeKc_A/profile-displayphoto-shrink_800_800/0/1612438527208?e=1629331200&v=beta&t=5uv9qC9z7jtMYdrOPo1Up62LkcTpKDmyMBb2aehuRh0" height="250" width="250" />
+                                src="https://media-exp1.licdn.com/dms/image/C5603AQFn4G5OyeKc_A/profile-displayphoto-shrink_200_200/0/1612438527208?e=1635984000&v=beta&t=6y36ba6JLjtAuqX8pFcJV4urSs_x-z-GgS0Alqvy1Jk" height="250" width="250" />
                         <h2 className="name-padding">Ridhi Jain</h2>
                             <h6>Full Stack Web Developer</h6>
                             <h6>B.Tech (CSE) - 2022</h6>
