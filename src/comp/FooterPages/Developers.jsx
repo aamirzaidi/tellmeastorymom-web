@@ -34,13 +34,6 @@ function Developers() {
                             <a className="name-padding btn-margin " href="https://github.com/ridhi-2801"><AiFillGithub size="25"/></a>
                             </div>
                     </div>
-                    <div className="d-box space-between">
-                    <img className=" logo responsive-image mompreneurPadding-top"
-                                src="https://firebasestorage.googleapis.com/v0/b/tellmeastorymom-c17e3.appspot.com/o/anshul%3B.jpg?alt=media&token=a893c223-6c17-487b-9005-72f121ce0dbd" height="250" width="250" />
-                        <h3 className="name-padding">Anshul Maheshwari</h3>
-                        <h6>Product Manager</h6>                      
-                        <a className="name-padding" href="https://www.linkedin.com/in/anshul-maheshwari1/"><AiFillLinkedin size="25"/></a>                          
-                </div>
                 </center>
             </div>
         </>
