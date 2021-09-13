@@ -19,6 +19,7 @@ import PrivacyPolicy from "./FooterPages/privacyPolicy"
 import Terms from "./FooterPages/terms";
 import GuestPostPage from "./GuestPosts/GuestPostPage";
 import AddMultipleStoryPage from "./AddStoryPage/AddMultipleStoryPage";
+import Page404 from "./Page404";
 
 function App(){
 
@@ -27,6 +28,7 @@ function App(){
         <TopHeader />    
         <Header/>
           <div className="container in">
+            <Switch>
                   <Route exact path={"/"} component={HomePageBody}/>
                   <Route exact path={"/exploreCategories"} component={ExploreCategories}/>
                   <Route exact path={"/Mompreneur"} component={MompreneurCarousel}/>
@@ -42,6 +44,8 @@ function App(){
                   <Route  exact path={"/guestposts"} component={GuestPostPage}/>
                   <Route  exact path={"/developers"} component={Developers}/>
                   <Route  path={"/adminpage"} component={AdminPage}/>
+                  <Route component={Page404} />
+              </Switch>
           </div> 
         <Footer/>
       </div>

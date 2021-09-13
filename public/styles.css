@@ -427,3 +427,9 @@ footer p {
        padding-top: 2 rem;
     }
   }
+
+  .pnf-title{
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 2rem;
+  }

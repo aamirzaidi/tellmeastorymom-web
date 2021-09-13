@@ -6,7 +6,7 @@ import {AiFillGithub} from "react-icons/ai";
 function Developers() {
     return (
         <>
-            <div class="container  d-bottom "> 
+            <div className="container  d-bottom "> 
               <center><img src={dev} className= "responsive-image"/></center>
               <center><h6 className="d-title d-bottom">Our Developers</h6></center>
               <center>
