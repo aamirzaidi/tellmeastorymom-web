@@ -4,6 +4,7 @@ import Carousel from 'react-elastic-carousel';
 import db from "../../firebase";
 import CategoryCard from '../homepage/body/Category Carousel/categoryCard';
 import LoadingIndicator from '../LoadingIndicator';
+import { Grid } from "@material-ui/core";
 
 function Interview() {
   const history = useHistory();
@@ -14,7 +15,7 @@ const ref = db.collection('Stories');
 
 function getStories(){
   setLoading(true);
-  ref.limit(5).where('related','array-contains','Interview').onSnapshot((querySnapshot) => {
+  ref.where('related','array-contains','Interview').onSnapshot((querySnapshot) => {
     const items = [];
     querySnapshot.forEach((story) => {
       const storyData = story.data();
@@ -37,7 +38,7 @@ if(loading) {
 
 function createInterview(story,index){
     return(  
-         
+    <Grid item lg = {4} xs = {12} sm = {6}> 
     <CategoryCard
       id={story.id}
       key={index}
@@ -47,7 +48,8 @@ function createInterview(story,index){
       author = {story.author}
       posted = {story.posted}
       onClick={() =>  {history.push("/storypage/"+`${story.id}`)}}
-      />     
+      />  
+      </Grid>   
     );
   }
 
@@ -60,17 +62,10 @@ function createInterview(story,index){
       return (
           <> 
        <div className="d-name">
-         <h1 className="mompreneurPadding-left">Interview</h1>
-        <Carousel viewport
-        breakPoints={breakpoint}
-        showArrows={false}
-        enableAutoPlay={true}
-        focusOnSelect="true"
-        transitionMs = "1000"
-        autoPlaySpeed= "5000"
-        >
-         {stories.map((story,index) => createInterview(story, index))} 
-         </Carousel>
+         <h1 className="mompreneurPadding-top mompreneurPadding-left">Interview</h1>
+         <Grid  container spacing ={3}> 
+          {stories.map((story,index) => createInterview(story, index))} 
+            </Grid>
          </div>
          </>
       ); 

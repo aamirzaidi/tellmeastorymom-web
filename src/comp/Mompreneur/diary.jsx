@@ -3,6 +3,7 @@ import Carousel from 'react-elastic-carousel';
 import { useHistory } from 'react-router-dom';
 import db from "../../firebase";
 import CategoryCard from '../homepage/body/Category Carousel/categoryCard';
+import { Grid } from "@material-ui/core";
 
 function Diary() {
   const history = useHistory();
@@ -14,7 +15,7 @@ function Diary() {
   function getStories() {
 
     setLoading(true);
-    ref.limit(5).where('related', 'array-contains', 'Diary').get().then((querySnapshot) => {
+    ref.where('related', 'array-contains', 'Diary').get().then((querySnapshot) => {
       const items = [];
       querySnapshot.forEach((story) => {
         const storyData = story.data();
@@ -37,6 +38,7 @@ function Diary() {
 
   function createDiary(story, index) {
     return (
+      <Grid item lg = {4} xs = {12} sm = {6}> 
       <CategoryCard
         key={index}
         id={story.id}
@@ -47,6 +49,7 @@ function Diary() {
         posted={story.posted}
         onClick={() => { history.push("/storypage/" + `${story.id}`) }}
       />
+      </Grid>
     );
   }
 
@@ -60,16 +63,9 @@ function Diary() {
     <>
     <div className="d-bottom">
       <h1 className="mompreneurPadding-top mompreneurPadding-left">Diary</h1>
-      <Carousel viewport
-        breakPoints={breakpoint}
-        enableAutoPlay={true}
-        showArrows={false}
-        focusOnSelect="true"
-        transitionMs="1000"
-        autoPlaySpeed="5000"
-      >
+      <Grid  container spacing ={3}> 
         {stories.map((story, index) => createDiary(story, index))}
-      </Carousel>
+        </Grid>
       </div>
     </>
   );
