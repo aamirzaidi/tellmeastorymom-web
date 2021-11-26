@@ -21,7 +21,7 @@ function getStories(){
       const storyData = story.data();
       storyData.id = story.id;
       items.push(storyData);
-      console.log(story.data().title);
+      
     });
   setStories(items);
   setLoading(false);

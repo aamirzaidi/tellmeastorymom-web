@@ -17,7 +17,10 @@ import {  FacebookShareButton,
    WhatsappIcon,
    TelegramIcon,
    LinkedinIcon,
-   TwitterIcon
+   TwitterIcon,
+   EmailIcon,
+   EmailShareButton,
+   FacebookMessengerShareButton
   } from "react-share";
 
 function StoryPage(props) {
@@ -157,7 +160,8 @@ function StoryPage(props) {
   }
 
   
-               
+      var url = "www.tellmeastorymom.com/StoryPage/"+`${id}`;         
+      var shareText = "\n"+storyData.title+"\n"+storyData.content.substring(0,310)+"..."+"\n\nFor complete story📖 check out the link.";
     return (
         <div className="container">
           <StoryPageBody
@@ -187,21 +191,24 @@ function StoryPage(props) {
          
             <h6 className="share-padding">Share via</h6>
             <div className="row-mb-2 share-padding">
-           <FacebookShareButton url={"/StoryPage/"+`${storyData}`} quote="Hey there! Read out This amazing story 📖">
+           <FacebookShareButton url={url} quote={storyData.content.substring(0,310)+"..."+"For complete story check out the link."} hashtag={"#Tellmeastorymom"}>
            <FacebookIcon logoFillColor="#0b5ed7" size="20" round={true}/>
            </FacebookShareButton>
-           <WhatsappShareButton  url={"www.tellmeastorymom.com/StoryPage/"+`${id}`} quote="Hey there! Read out This amazing story 📖">
+           <WhatsappShareButton  url={url} title={shareText}>
            <WhatsappIcon size="20" round={true}/>
            </WhatsappShareButton>
-           <TelegramShareButton  url={"www.tellmeastorymom.com/StoryPage/"+`${id}`} quote="Hey there! Read out This amazing story 📖">
+           <TelegramShareButton  url={url} title={shareText}>
            <TelegramIcon size="20" round={true}/>
            </TelegramShareButton>
-           <TwitterShareButton  url={"www.tellmeastorymom.com/StoryPage/"+`${id}`} quote="Hey there! Read out This amazing story 📖">
+           <TwitterShareButton  url={url} title={shareText}>
            <TwitterIcon size="20" round={true}/>
            </TwitterShareButton>
-           <LinkedinShareButton  url={"www.tellmeastorymom.com/StoryPage/"+`${id}`} quote="Hey there! Read out This amazing story 📖">
+           <LinkedinShareButton  url={url} summary={shareText} title="Tellmeastorymom">
            <LinkedinIcon size="20" round={true}/>
            </LinkedinShareButton>
+           <EmailShareButton url={url} subject="Tellmeastorymom" body={shareText}>
+           <EmailIcon size="20" round={true}/>
+             </EmailShareButton>
             </div>
             <Form onSubmit={handleSubmitComment} className="form col gy-2 gx-3 align-items-center">
             <FormGroup id = "comment">
