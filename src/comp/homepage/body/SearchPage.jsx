@@ -27,7 +27,7 @@ function Search() {
            const items = [];
            querySnapshot.forEach((story) => {
                   let storyData = story.data();
-                  if(storyData.title.toLowerCase().includes(searchTerm.toLowerCase()) || storyData.content.includes(searchTerm)){
+                  if(storyData.title.toLowerCase().includes(searchTerm.toLowerCase()) || storyData.content.toLowerCase().includes(searchTerm.toLowerCase())){
                     storyData.id = story.id;
                     items.push(storyData);
                   }
