@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGoogle} from "@fortawesome/free-brands-svg-icons";
+import {faGoogle, faGooglePlusG} from "@fortawesome/free-brands-svg-icons";
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -34,12 +34,13 @@ function GoogleLoginbutton(props){
         fullWidth
         variant="contained"
         color="primary"
-        className={classes.submit}
-      ><div className="row">
-    <center>  <FontAwesomeIcon  icon={faGoogle} /></center>
-        <div className="googleSpace"/>
-        Sign In With Google
-        </div>
+        className={classes.submit}>
+      <div className="row">
+          <center><FontAwesomeIcon  icon={faGooglePlusG} color="yellow" size="lg"/></center>
+          <div className="googleSpace">
+          Sign In With Google
+          </div>
+      </div>
       </Button>
     );
 }

@@ -331,7 +331,7 @@ footer p {
 }
 
 .d-name{
-  padding-top: 6rem;
+  padding-top: 6 rem;
 }
 
 .d-box{
@@ -339,7 +339,7 @@ footer p {
 }
 
 .d-bottom{
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .name-padding{
@@ -351,8 +351,9 @@ footer p {
 }
 
 .space-between{
- margin-top: 10rem;
+ margin-top: 3rem;
 }
+
 .cd{
   /* background-image: url("https://i.pinimg.com/originals/08/1f/8c/081f8cd08585e1040a8393c25b274126.gif"); */
      /* background-image: url("https://i.pinimg.com/originals/84/9f/f2/849ff2b1c2838cd028d3c067369e424d.gif"); */
@@ -421,14 +422,14 @@ footer p {
   padding-Bottom: 2 rem;
 }
 
-<<<<<<< HEAD
-.share-padding{
-  padding-left: 1.5rem;
-}
-=======
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .top_header_btn{
        padding-top: 2 rem;
     }
   }
->>>>>>> 3636f898de7d33e14df34abf357f158a48611fab
+
+  .pnf-title{
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 2rem;
+  }

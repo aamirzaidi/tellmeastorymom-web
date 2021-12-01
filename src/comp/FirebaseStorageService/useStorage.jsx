@@ -7,13 +7,6 @@ const useStorage = (file, file2, file3, file4, file5, file6, storyData, noOfFile
     const [progress, setProgress] = useState(0);
     const [error, setError] = useState(null);
 
-    // const [URL, setUrl] = useState(null);
-    // const [URL2, setUrl2] = useState(null);
-    // const [URL3, setUrl3] = useState(null);
-    // const [URL4, setUrl4] = useState(null);
-    // const [URL5, setUrl5] = useState(null);
-    // const [URL6, setUrl6] = useState(null);
-
     const dbRef = db.collection('PendingStories');
     const history = useHistory();
 
