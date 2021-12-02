@@ -122,10 +122,6 @@ function AddMultipleStoryPage() {
         let date = new Date();
         let day = date.getDate();
         let month = date.getMonth() + 1;
-        let lessThanZero = false;
-        if(month/10 < 1){
-            lessThanZero = true;
-        }
         let year = date.getFullYear();
 
         const title = titleRef.current.value;
@@ -138,7 +134,7 @@ function AddMultipleStoryPage() {
         const content6 = contentRef6.current.value;
 
         const category = categoryRef.current.value;
-        const posted = `Posted on ${day}-${lessThanZero ? "0" + month : month}-${year}`;
+        const posted = `Posted on ${day<10? "0"+day : ""+day }-${month < 10 ? "0" + month : "" + month}-${year}`;
         const related = [category];
 
         if(!currentUser){

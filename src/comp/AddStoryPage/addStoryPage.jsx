@@ -54,7 +54,7 @@ function AddStory() {
         const title = titleRef.current.value;
         const content = contentRef.current.value;
         const category = categoryRef.current.value;
-        const posted = `Posted on ${day<10? "0"+day : day + ""}-${month < 10 ? "0" + month : "" + month}-${year}`;
+        const posted = `Posted on ${day<10? "0"+day : ""+day }-${month < 10 ? "0" + month : "" + month}-${year}`;
         const related = [category];
 
         if (!currentUser) {
