@@ -5,13 +5,7 @@ function Header() {
 
   const history = useHistory();
   const [searchTerm,setSearchTerm] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
 
-  function toggle(){
-    console.log(!isOpen);
-    setIsOpen(!isOpen);
-  }
- 
   function getSearchTerm(event){
     setSearchTerm(event.target.value);
     console.log(searchTerm);
@@ -28,52 +22,52 @@ function Header() {
   return (
     
     <nav className="navbar navbar-expand-sm navbar-light top container-fluid">
-    {isOpen?<button className="navbar-toggler" type="" data-toggle="collapse" 
+    <button className="navbar-toggler" type="" data-toggle="collapse" 
     data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
-    aria-expanded="false" aria-label="Toggle navigation" onClick={toggle}>
+    aria-expanded="false" aria-label="Toggle navigation" >
       <span className="navbar-toggler-icon"></span>
       
-    </button>:
+    </button>
     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
       
       <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 
         <li className="nav-item active">
-          <Link onClick={toggle} className ="nav-link top-color n menu-toggle" to="/"><h6 className="n">Home</h6> 
+          <Link  className ="nav-link top-color n menu-toggle" to="/"><h6 className="n">Home</h6> 
           </Link><span className="sr-only">(current)</span>
         </li>
 
         <li className="nav-item">
           <nav >
-          <Link onClick={toggle} className ="nav-link top-color n" to="/Mompreneur"><h6 className="n">Mompreneur</h6> 
+          <Link  className ="nav-link top-color n" to="/Mompreneur"><h6 className="n">Mompreneur</h6> 
           </Link><span className="sr-only">(current)</span>
           </nav>
         </li>
 
         <li className="nav-item" >
           <nav>
-          <Link onClick={toggle} className ="nav-link top-color n" to="/addStory"><h6 className="n">Submit a story</h6>  
+          <Link  className ="nav-link top-color n" to="/addStory"><h6 className="n">Submit a story</h6>  
           </Link><span className="sr-only">(current)</span>
           </nav>
         </li>
 
         <li className="nav-item">
           <nav >
-          <Link onClick={toggle} className ="nav-link top-color n" to="/guestposts"><h6 className="n">Guest Posts</h6> 
+          <Link  className ="nav-link top-color n" to="/guestposts"><h6 className="n">Guest Posts</h6> 
           </Link><span className="sr-only">(current)</span>
           </nav>
         </li>
 
         <li className="nav-item" >
           <nav>
-          <Link onClick={toggle} className ="nav-link top-color n" to="/exploreCategories"><h6 className="n">Categories</h6>  
+          <Link  className ="nav-link top-color n" to="/exploreCategories"><h6 className="n">Categories</h6>  
           </Link><span className="sr-only">(current)</span>
           </nav>
         </li>
 
         <li className="nav-item" >
           <nav>
-          <Link onClick={toggle} className ="nav-link top-color n" to="/about"><h6 className="n">About</h6>  
+          <Link  className ="nav-link top-color n" to="/about"><h6 className="n">About</h6>  
           </Link><span className="sr-only">(current)</span>
           </nav>
         </li>
@@ -86,7 +80,7 @@ function Header() {
           type="submit">Search</button>
       </form>
     </div>
-}
+
   </nav>
   );
 }
