@@ -7,7 +7,10 @@ import db from "../../firebase";
 import LoadingIndicator from "../LoadingIndicator";
 import CommentsList from "./CommentsList";
 import {useAuth} from "../FirebaseAuthService/AuthContext";
-import Rating from 'react-simple-star-rating'
+import Rating from 'react-simple-star-rating';
+import { useLocation } from 'react-router';
+import queryString from 'query-string';
+
 import {  FacebookShareButton, 
   WhatsappShareButton, 
   TwitterShareButton,
@@ -23,8 +26,11 @@ import {  FacebookShareButton,
    FacebookMessengerShareButton
   } from "react-share";
 
-function StoryPage(props) {
-  const { id }= useParams();
+function StoryPage() {
+  const location = useLocation();
+  const parsed = queryString.parse(location.search);
+  const id = parsed.id;
+  
   const [storyData, setStoryData] = useState({});
   const [Loading, setLoading] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);
@@ -159,8 +165,7 @@ function StoryPage(props) {
     return <h1>404 Not Found !!</h1>
   }
 
-  
-      var url = "www.tellmeastorymom.com/StoryPage/"+`${id}`;         
+      var url = "www.tellmeastorymom.com/storyData?id="+`${id}`;         
       var shareText = "\n"+storyData.title+"\n"+storyData.content.substring(0,310)+"..."+"\n\nFor complete story📖 check out the link.";
     return (
         <div className="container">
