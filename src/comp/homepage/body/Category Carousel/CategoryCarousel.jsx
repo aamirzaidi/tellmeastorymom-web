@@ -23,7 +23,7 @@ import { useHistory } from "react-router-dom";
       author= {story.author}
       storyImageURL={story.storyImageURL}
       onClick={() => {
-        history.push("/storypage/"+`${story.id}`)
+        history.push("/storyData?id="+`${story.id}`)
         }}
       />     
     );

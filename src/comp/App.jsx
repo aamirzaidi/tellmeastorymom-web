@@ -34,7 +34,7 @@ function App(){
                   <Route exact path={"/Mompreneur"} component={MompreneurCarousel}/>
                   <Route exact path={"/addStory"} component={addStory}/>    
                   <Route exact path={"/addMultipleStory"} component={AddMultipleStoryPage}/>        
-                  <Route exact path={"/StoryPage/:id"} component={StoryPage}/> 
+                  <Route exact path={"/:storyData"} component={StoryPage}/> 
                   <Route  path={"/login"} component={Login}/>
                   <Route  path={"/signup"} component={SignUp}/>
                   <Route  path ={"/search/:searchTerm"} component={Search}/>

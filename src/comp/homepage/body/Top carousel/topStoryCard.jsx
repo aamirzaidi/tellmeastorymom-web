@@ -14,7 +14,11 @@ function TopStoryCard(props){
     <div className="col-md-6">
       <div className="card-body">
         <h3 className="card-title top-card-padding">{props.title}</h3>
-        <p  className="card-text ">{props.content.substring(0,500).replaceAll("\\n","\n")} <strong><em  className = "hand" onClick={() =>  {history.push("/storypage/"+`${props.id}`)}} color= "blue">Read More</em></strong> </p>
+        <p  className="card-text ">{props.content.substring(0,500).replaceAll("\\n","\n")} 
+          <strong>
+            <em  className = "hand" onClick={() => {history.push("/storyData?id="+`${props.id}`)}} color= "blue">Read More</em>
+          </strong>
+        </p>
         <p className="card-text"><small>{props.posted}</small></p>
         <p className="card-text"><small className="text-muted">{props.author}</small></p>
       </div>

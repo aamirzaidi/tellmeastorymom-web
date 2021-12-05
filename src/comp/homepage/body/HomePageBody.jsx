@@ -11,6 +11,7 @@ import LoadingIndicator from "../../LoadingIndicator";
 import Mark4 from "../../../images/mark4.png";
 import Mark5 from "../../../images/mark5.png";
 import Mark6 from "../../../images/mark6.png";
+
 function Body() {
 
    const [loading, setLoading] = useState(false);
