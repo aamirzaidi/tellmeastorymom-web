@@ -166,7 +166,7 @@ function StoryPage() {
   }
 
       var url = "www.tellmeastorymom.com/storyData?id="+`${id}`;         
-      var shareText = "\n"+storyData.title+"\n"+storyData.content.substring(0,310)+"..."+"\n\nFor complete story📖 check out the link.";
+      var shareText = "\n"+storyData.title+"\n"+storyData.content.substring(0,310)+"..."+"\n\nFor complete story📖 check out the link.\n"+storyData.storyImageURL;
     return (
         <div className="container">
           <StoryPageBody

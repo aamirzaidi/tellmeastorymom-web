@@ -56,7 +56,7 @@ function Body() {
    const [PowerStories,setPowerStories] = useState([]);
    const [ClevernessStories,setClevernessStories] = useState([]); 
    const [SixToTwelveStories,setSixToTwelveStories] = useState([]); 
-   const history = useHistory();
+
 
    async function getkindnessStories() {
       await db.collection('Stories').where('related', 'array-contains', 'Kindness').limit(20).get().then((querySnapshot) => {
