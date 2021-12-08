@@ -21,7 +21,6 @@ function Diary() {
         const storyData = story.data();
         storyData.id = story.id;
         items.push(storyData);
-
       });
       setStories(items);
       setLoading(false);
@@ -47,7 +46,9 @@ function Diary() {
         storyImageURL={story.storyImageURL}
         author={story.author}
         posted={story.posted}
-        onClick={() => { history.push("/storypage/" + `${story.id}`) }}
+        onClick={() => {
+            history.push("/storyData?id="+`${story.id}`)
+        }}
       />
       </Grid>
     );

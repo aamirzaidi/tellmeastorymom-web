@@ -1,8 +1,7 @@
 import React , { useState , useEffect ,setState , useRef} from "react";
-import { Form,FormGroup, FormLabel, FormControl , Alert} from "react-bootstrap";
+import { Form,FormGroup, FormLabel, Alert} from "react-bootstrap";
 import StoryPageBody from "./storyPageBody"
 import CategoryCarousel from "../homepage/body/Category Carousel/CategoryCarousel"
-import  {useParams } from "react-router-dom";
 import db from "../../firebase";
 import LoadingIndicator from "../LoadingIndicator";
 import CommentsList from "./CommentsList";
@@ -23,14 +22,13 @@ import {  FacebookShareButton,
    TwitterIcon,
    EmailIcon,
    EmailShareButton,
-   FacebookMessengerShareButton
+  //  FacebookMessengerShareButton
   } from "react-share";
 
 function StoryPage() {
   const location = useLocation();
   const parsed = queryString.parse(location.search);
   const id = parsed.id;
-  
   const [storyData, setStoryData] = useState({});
   const [Loading, setLoading] = useState(false);
   const [isEmpty, setIsEmpty] = useState(true);

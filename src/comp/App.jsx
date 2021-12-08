@@ -33,17 +33,17 @@ function App(){
                   <Route exact path={"/exploreCategories"} component={ExploreCategories}/>
                   <Route exact path={"/Mompreneur"} component={MompreneurCarousel}/>
                   <Route exact path={"/addStory"} component={addStory}/>    
-                  <Route exact path={"/addMultipleStory"} component={AddMultipleStoryPage}/>        
-                  <Route exact path={"/:storyData"} component={StoryPage}/> 
-                  <Route  path={"/login"} component={Login}/>
-                  <Route  path={"/signup"} component={SignUp}/>
-                  <Route  path ={"/search/:searchTerm"} component={Search}/>
-                  <Route  exact path={"/about"} component={About}/>
+                  <Route exact path={"/addMultipleStory"} component={AddMultipleStoryPage}/>  
+                  <Route  exact path={"/guestposts"} component={GuestPostPage}/>  
+                  <Route  exact path={"/about"} component={About}/>    
+                  <Route  exact path={"/login"} component={Login}/>
+                  <Route  exact path={"/signup"} component={SignUp}/>
+                  <Route  exact path ={"/search/:searchTerm"} component={Search}/>
                   <Route  exact path={"/privacyPolicy"} component={PrivacyPolicy}/>
                   <Route  exact path={"/terms-and-conditions"} component={Terms}/>
-                  <Route  exact path={"/guestposts"} component={GuestPostPage}/>
                   <Route  exact path={"/developers"} component={Developers}/>
-                  <Route  path={"/adminpage"} component={AdminPage}/>
+                  <Route  exact path={"/adminpage"} component={AdminPage}/>
+                  <Route exact path={"/:storyData"} component={StoryPage}/> 
                   <Route component={Page404} />
               </Switch>
           </div> 

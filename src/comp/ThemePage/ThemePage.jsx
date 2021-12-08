@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from '@material-ui/core/Container';
 import logo from "../../images/logo.jpg";
-import CssBaseline from '@material-ui/core/CssBaseline';
 import { Row, Col , Button} from 'react-bootstrap';
 
 function ThemePage() {

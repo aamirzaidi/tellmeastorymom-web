@@ -51,7 +51,9 @@ function ExploreCategories(){
                 date= {story.posted}
                 author= {story.author}
                 storyImageURL={story.storyImageURL}
-                onClick={() =>  {history.push("/storypage/"+`${story.id}`)}}
+                onClick={() => {
+                  history.push("/storyData?id="+`${story.id}`)
+                }}
                 />     
                 </Grid>
         );

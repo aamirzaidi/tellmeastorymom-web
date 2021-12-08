@@ -31,42 +31,42 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
           <li className="nav-item active">
-            <a className="nav-link top-color n" href ="/"><h6 className="n">Home <span className="sr-only">(current)</span></h6>
-            </a>
+            <Link className="nav-link top-color n" to ="/"><h6 className="n">Home <span className="sr-only">(current)</span></h6>
+            </Link>
           </li>
 
           <li className="nav-item">
             <nav >
-              <a className="nav-link top-color n" href ="/Mompreneur" ><h6 className="n">Mompreneur</h6>
-              </a>
+              <Link className="nav-link top-color n" to ="/Mompreneur" ><h6 className="n">Mompreneur</h6>
+              </Link>
             </nav>
           </li>
 
           <li className="nav-item" >
             <nav>
-              <a className="nav-link top-color n" href ="/addStory"><h6 className="n">Submit a story</h6>
-              </a>
+              <Link className="nav-link top-color n" to ="/addStory"><h6 className="n">Submit a story</h6>
+              </Link>
             </nav>
           </li>
 
           <li className="nav-item">
             <nav >
-              <a className="nav-link top-color n" href ="/guestposts" ><h6 className="n">Guest Posts</h6>
-              </a>
+              <Link className="nav-link top-color n" to ="/guestposts"><h6 className="n">Guest Posts</h6>
+              </Link>
             </nav>
           </li>
 
           <li className="nav-item" >
             <nav>
-              <a className="nav-link top-color n" href ="/exploreCategories" ><h6 className="n">Categories</h6>
-              </a>
+              <Link className="nav-link top-color n" to ="/exploreCategories" ><h6 className="n">Categories</h6>
+              </Link>
             </nav>
           </li>
 
           <li className="nav-item" >
             <nav>
-              <a className="nav-link top-color n" href ="/about"><h6 className="n">About</h6>
-              </a>
+              <Link className="nav-link top-color n" to ="/about"><h6 className="n">About</h6>
+              </Link>
             </nav>
           </li>
 
@@ -75,7 +75,7 @@ function Header() {
           <input onChange={getSearchTerm}  className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
           <button onClick={getSearchResults}
             className="btn btn-primary my-2 my-sm-0"
-            type="submit">Search</button>
+            type="submit">Search</button>   
         </form>
       </div>
     </nav>

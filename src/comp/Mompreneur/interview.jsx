@@ -47,7 +47,9 @@ function createInterview(story,index){
       storyImageURL = {story.storyImageURL}
       author = {story.author}
       posted = {story.posted}
-      onClick={() =>  {history.push("/storypage/"+`${story.id}`)}}
+      onClick={() => {
+        history.push("/storyData?id="+`${story.id}`)
+      }}
       />  
       </Grid>   
     );

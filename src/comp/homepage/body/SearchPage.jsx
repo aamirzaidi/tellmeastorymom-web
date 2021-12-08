@@ -13,14 +13,6 @@ function Search() {
     const [searchedStories, setSearchedStories] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    function isLowerCase(ch) {
-        if (ch == ch.toLowerCase()){
-            return true;
-        }else {
-            return false;
-        }
-     }
-
     async function getSearchedStories() {
         const ref = db.collection('Stories');
         await ref.get().then((querySnapshot) => {
@@ -35,7 +27,6 @@ function Search() {
          setSearchedStories(items);
          console.log(searchedStories);
         });
-        
         setLoading(false);
     }
 
@@ -57,7 +48,9 @@ useEffect(() => {
             date= {story.posted}
             author= {story.author}
             storyImageURL={story.storyImageURL}
-            onClick={() =>  {history.push("/storypage/"+`${story.id}`)}}
+            onClick={() => {
+                history.push("/storyData?id="+`${story.id}`)
+            }}
             />   
             </Grid>
     );
