@@ -163,9 +163,23 @@ function StoryPage() {
     return <h1>404 Not Found !!</h1>
   }
 
+
       var url = "www.tellmeastorymom.com/storyData?id="+`${id}`;         
-      var shareText = "\n"+storyData.title+"\n"+storyData.content.substring(0,400)+"..."+"\n\nFor complete story📖 check out the link.\n";
-    return (
+      var storyText = "\n"+storyData.title+"\n"+storyData.content.substring(0,400)+"..."+"\n\nFor complete story📖 check out the link.\n";
+      var interviewText = "\n"+ storyData.title +"\n\nRead the complete interview📖 from the link.\n";
+      var diaryText = "\n"+ storyData.title +"\n"+storyData.content.substring(0,400)+"..."+"\n\nRead the complete diary📖 from the link.\n";
+      
+      console.log(storyData.related[0]);
+      var shareText = "";
+      if(storyData.related[0] === "Interview"){
+        shareText = interviewText;
+      }else if(storyData.related[0] === "Diary"){
+        shareText = diaryText;
+      }else{
+        shareText = storyText;
+      }
+
+      return (
         <div className="container">
           <StoryPageBody
             storyId = {storyData.id} 
