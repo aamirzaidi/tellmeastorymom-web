@@ -164,7 +164,7 @@ function StoryPage() {
   }
 
       var url = "www.tellmeastorymom.com/storyData?id="+`${id}`;         
-      var shareText = "\n"+storyData.title+"\n"+storyData.content.substring(0,310)+"..."+"\n\nFor complete story📖 check out the link.\n"+storyData.storyImageURL;
+      var shareText = "\n"+storyData.title+"\n"+storyData.content.substring(0,400)+"..."+"\n\nFor complete story📖 check out the link.\n";
     return (
         <div className="container">
           <StoryPageBody
@@ -201,7 +201,7 @@ function StoryPage() {
            <WhatsappIcon size="20" round={true}/>
            </WhatsappShareButton>
            <TelegramShareButton  url={url} title={shareText}>
-           <TelegramIcon size="20" round={true}/>
+            <TelegramIcon size="20" round={true}/>
            </TelegramShareButton>
            <TwitterShareButton  url={url} title={shareText}>
            <TwitterIcon size="20" round={true}/>
