@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       await signup(emailRef.current.value, passwordRef.current.value);
       history.push("/");
     }catch {
-      setError('Failed to create account!')
+      setError('Failed to create account!');
     }
 
     setLoading(false);

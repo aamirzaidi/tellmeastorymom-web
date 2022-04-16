@@ -17,14 +17,16 @@ const [loading, setLoading] = useState(true);
 const [isAdmin, setIsAdmin] = useState(false);
 
 async function signup(email, password){
-    const value = await auth.createUserWithEmailAndPassword(email, password).then((user) => {
-        db.collection('Users').doc(user.uid).set({
-            'email' : user.email,
-            'displayName' : user.displayName,
+    const value = await auth.createUserWithEmailAndPassword(email, password).then((value) => {
+        console.log(value.user.email);
+        db.collection('Users').doc(value.user.uid).set({
+            'email' : value.user.email,
+            'displayName' : value.user.displayName,
             'phoneNumber' : "",
             'recents' : []
         })    
     });
+    
     return value;
 }
 
